@@ -1,0 +1,16 @@
+name: Sync AI Tools Data
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs at midnight every day
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  sync-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync AI Tools Data
+        run: |
+          curl -X POST "https://your-app-name.vercel.app/api/ai-tools/sync-all" \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${{ secrets.API_SECRET }}"
