@@ -1,4 +1,4 @@
-# HappyTools - AI Tools Discovery Platform
+# HappyTools - AI Tools Discovery Platform  ..
 
 > Your daily dose of happiness-inducing AI tools, curated from the best sources. Discover amazing AI tools that make you happy!
 
